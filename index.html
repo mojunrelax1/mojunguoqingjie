@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>庆祝国庆 · 祝福祖国</title>
+  <meta name="description" content="庆祝中华人民共和国成立主题页，祝福祖国繁荣昌盛。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true"></div>
+  <div class="stars-fall" id="starsFall" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="stars" aria-hidden="true">
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+    </div>
+    <h1 class="hero-title">庆祝国庆</h1>
+    <p class="hero-sub">热烈庆祝中华人民共和国成立</p>
+    <p class="hero-year" id="yearNum">77 周年</p>
+
+    <div class="emblems">
+      <figure class="emblem">
+        <img class="flag-img" src="flag.png" alt="五星红旗" width="180" height="120" />
+        <figcaption>五星红旗</figcaption>
+      </figure>
+      <figure class="emblem">
+        <img class="party-emblem" src="danghui.png" alt="中国共产党党徽" width="130" height="130" />
+        <figcaption>党徽</figcaption>
+      </figure>
+    </div>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="btnLight" type="button">点亮国旗</button>
+      <button class="btn btn-ghost" id="btnShare" type="button">分享给朋友</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="blessTitle">
+      <h2 class="section-title" id="blessTitle">祝福祖国</h2>
+      <ul class="bless-list" id="blessList"></ul>
+      <button class="btn btn-ghost" id="btnMore" type="button">换一批祝福</button>
+    </section>
+
+    <section class="section" aria-labelledby="cardTitle">
+      <h2 class="section-title" id="cardTitle">生成你的国庆卡片</h2>
+      <p class="section-desc">输入你的名字，生成专属庆祝卡片，长按可保存分享。</p>
+      <div class="card-form">
+        <input type="text" id="cardName" maxlength="12" placeholder="输入你的名字" aria-label="输入名字" />
+        <button class="btn btn-primary" id="btnCard" type="button">生成卡片</button>
+      </div>
+      <div class="card-preview" id="cardPreview" aria-live="polite"></div>
+    </section>
+
+    <section class="section firework-section" aria-labelledby="fwTitle">
+      <h2 class="section-title" id="fwTitle">放烟花庆国庆</h2>
+      <p class="section-desc">点击下方按钮，为祖国放一场烟花。</p>
+      <button class="btn btn-primary" id="btnFirework" type="button">放烟花</button>
+      <div class="firework-stage" id="fwStage" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>@MOJNBYYDS666频道开发</p>
+    <p class="footer-sub">祝福祖国 · 繁荣昌盛</p>
+    <p class="footer-count">
+      访问量：<span id="busuanzi_value_site_pv">--</span> 次 ·
+      访客：<span id="busuanzi_value_site_uv">--</span> 人
+    </p>
+  </footer>
+
+  <!-- Busuanzi 免费统计：不注册、不绑卡 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
